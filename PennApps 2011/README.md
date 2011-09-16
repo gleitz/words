@@ -1,4 +1,4 @@
-# PennApps 2011 Hackstravaganze
+# PennApps 2011 Hackstravaganza
 
 5 live demos in 5 minutes, powered by the [Hunch API][1]. 5x the danger, 10x the network bandwidth...
 
