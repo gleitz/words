@@ -1,9 +1,10 @@
 # PennApps 2011 Hackstravaganze
 
-5 live demos in 5 minutes, powered by the [Hunch API][1] 5x the danger, 10x
-the ACKs.
+5 live demos in 5 minutes, powered by the [Hunch API][1]. 5x the danger, 10x the network bandwidth...
 
 **TL;DR Check out the [Hunch API reference][2].**
+
+# Demos
 
 ## [Fast Forward][3]
 
@@ -35,11 +36,11 @@ the ACKs.
 
 ## [Restaurantology][8]
 
-  * I'm homesick for "..." but I live in "..."
+  * I'm homesick for _that restaurant I used to love back in High School_ but I live in _Juneau, Alaska_.
   * API calls used
 
-    * [get-results][4] (search for an artist with a given name)
-    * [get-similar-results][9]
+    * [get-results](http://api.hunch.com/api/v1/get-results?query=five%20guys&topic_ids=list_restaurant&minimal=1) (find the restaurant in your hometown)
+    * [get-similar-results][9] (find similar restaurants in your current location)
 
 ## [Brdg.me][10]
 
@@ -47,12 +48,19 @@ the ACKs.
   * API calls used
 
     * [get-tastemates][11] (find the user with fashion sense most like Twitter user "gleitz")
-    * [get-recommendations][7]
+    * [get-recommendations][7] (find movies that person likes, to use as an icebreaker)
 
 ## [AutomaticDJ][12]
 
   * Build custom music playlists using facial recognition
   * Leverages the [Face.com][13] API as well as [Echo Nest][14]
+  * API calls used
+
+    * [get-recommendations][15]
+
+## BONUS: [Hunch.fm](http://hunch.com/fm/)
+
+  * Personalized, streaming music a la pandora
   * API calls used
 
     * [get-recommendations][15]
@@ -72,32 +80,35 @@ the ACKs.
 
     * [batch][18] (allows you to execute multiple API request in one call)
 
-  http://api.hunch.com/api/v1/batch/?auth_basic=1&calls=
+          http://api.hunch.com/api/v1/batch/?auth_basic=1&calls=
 
-		  [
-			{"name":"get-recommendations",
-			 "params":
-				{"friend_id":"tw_gleitz",
-				 "limit":"10",
-				 "topic_ids":"list_movie"}},
-			{"name":"get-recommendations",
-			 "params":
-				{"_result_ids":"responses[0].recommendations.result_id",
-				 "minimal":true,
-				 "limit":10,
-				 "popularity":".1",
-				 "friend_id":"tw_pennapps"},
-			 "requires":["responses[0].recommendations.result_id"]}]
+				  [
+					{"name":"get-recommendations",
+					 "params":
+						{"friend_id":"tw_gleitz",
+						 "limit":"10",
+						 "topic_ids":"list_movie"}},
+					{"name":"get-recommendations",
+					 "params":
+						{"_result_ids":"responses[0].recommendations.result_id",
+						 "minimal":true,
+						 "limit":10,
+						 "popularity":".1",
+						 "friend_id":"tw_pennapps"},
+					 "requires":["responses[0].recommendations.result_id"]}
+				  ]
 
 ## What Should I Build??
 * Group recommendations
   * I'm going to dinner with Wesley Snpes, Kenny G., and Staff Sergeant Max Fightmaster. Where should we go? Check out the [group recommendations][23] call.
 
-* A browser extension that takes the current page you are on (Amazon, Facebook, Yelp) and shows your affinity to that thing.
+* A browser extension that takes the current page you are on (Amazon, Facebook, Yelp) and shows your affinity to that page.
 
-* Generate a Tumblr blog on-the-fly that pulls down interesting Hunch results. You could follow it and and always see cool things personalized for you.
+* Generate a Tumblr blog on the fly that pulls down interesting Hunch results. People could follow it and the recommendations would evolve based on the followers.
 
-* A Foursquare hack that pull down all the places you've been and recommends similar spots, similar items, and similar people. Or a "stereotype generator" that shows things that people like that frequent particular places (Cufflinks and golf clubs for the Four Seasons, Birkenstocks and anti-nuclear proliferation for Whole Foods).
+* A Foursquare hack that pulls down all the places you've been and recommends similar spots, similar items, or similar people.
+
+* A "stereotype generator" that shows things that people like that frequent particular Foursquare places (Cufflinks and golf clubs for the Four Seasons, Birkenstocks and anti-nuclear proliferation for Whole Foods).
 
 * A turntable.fm mashup that recommends rooms based on your similarity to people in the room.
 
