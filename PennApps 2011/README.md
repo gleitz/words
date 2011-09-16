@@ -22,6 +22,7 @@ the ACKs.
 
   * Protip: result_ids can be from:
 
+    * Amazon (amz_)
     * Facebook (fb_)
     * Foursquare (4sq_)
     * Hunch (hn_)
@@ -89,6 +90,18 @@ the ACKs.
 			 "requires":["responses[0].recommendations.result_id"]}]
 
 ## What Should I Build??
+* Group recommendations
+  * I'm going to dinner with Wesley Snpes, Kenny G., and Staff Sergeant Max Fightmaster. Where should we go? Check out the [group recommendations][23] call.
+
+* A browser extension that takes the current page you are on (Amazon, Facebook, Yelp) and shows your affinity to that thing.
+
+* Generate a Tumblr blog on-the-fly that pulls down interesting Hunch results. You could follow it and and always see cool things personalized for you.
+
+* A Foursquare hack that pull down all the places you've been and recommends similar spots, similar items, and similar people. Or a "stereotype generator" that shows things that people like that frequent particular places (Cufflinks and golf clubs for the Four Seasons, Birkenstocks and anti-nuclear proliferation for Whole Foods).
+
+* A turntable.fm mashup that recommends rooms based on your similarity to people in the room.
+
+* A clone of [EchoFi](http://echofiapp.com/), powered by Hunch.
 
 ## Links Worth Reading
 
@@ -98,6 +111,8 @@ the ACKs.
   * [Code Samples][20]
   * [API Console][21]
   * [Introduction to Google App Engine by Guido van Rossum][22]
+
+**Good luck! Go out there and crunch some data!**
 
    [1]: http://hunch.com/developers/
    [2]: http://hunch.com/developers/v1/docs/reference/
@@ -121,3 +136,4 @@ the ACKs.
    [20]: http://hunch.com/developers/v1/resources/samples/
    [21]: http://hunch.com/developers/v1/resources/console/
    [22]: http://www.stanford.edu/class/ee380/Abstracts/081105.html
+   [23]: http://api.hunch.com/api/v1/get-recommendations/?topic_ids=list_movie&group_user_ids=tw_17289881,tw_173940470
