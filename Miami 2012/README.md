@@ -1,4 +1,4 @@
-# PennApps 2011 Hackstravaganza
+# Miami 2012 UHack
 
 5 live demos in 5 minutes, powered by the [Hunch API][1]. 5x the danger, 10x the network bandwidth...
 
@@ -61,6 +61,13 @@
 ## BONUS: [Hunch.fm](http://hunch.com/fm/)
 
   * Personalized, streaming music a la pandora
+  * API calls used
+
+    * [get-recommendations][15]
+
+## BONUS: [Hunch Movies](http://hunch.com/movies/)
+
+  * Better-than-Netflix movie recommendations
   * API calls used
 
     * [get-recommendations][15]
