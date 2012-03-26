@@ -101,7 +101,7 @@
 
 ## What Should I Build??
 * Group recommendations
-  * I'm going to dinner with Wesley Snpes, Kenny G., and Staff Sergeant Max Fightmaster. Where should we go? Check out the [group recommendations][23] call.
+  * I'm going to dinner with Wesley Snipes, Kenny G., and Staff Sergeant Max Fightmaster. Where should we go? Check out the [group recommendations][23] call.
 
 * A browser extension that takes the current page you are on (Amazon, Facebook, Yelp) and shows your affinity to that page.
 
